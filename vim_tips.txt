@@ -1,0 +1,46 @@
+======================= VIM
+Ctrl + h j k l 切换左右侧缓冲区
+leader + ff 快速打开文件
+- 注意 tab 选择时多选，需要Ctrl + j k 上下移动
+
+leader + fw 全局搜索文件中的内容
+leader + b 会提示 缓冲区窗口相关
+
+在已打开的缓冲区中切换
+leader + fb 
+] + b
+
+Ctrl + o 上一个位置
+Ctrl + i 下一个位置
+
+wq/q + a 都是将命令作用与当前打开的所有窗口
+v模式 ---> h j k l ---> y 复制
+v模式 ---> p 粘贴
+
+==================== 窗口操作
+Ctrl + w v 当前窗口查分到右侧
+leader + ff 搜到文件后 Ctrl + v 同样右侧分屏打开
+Ctrl + 方向键，调整当前焦点所在的窗口大小
+ 
+终端
+leader + tf 浮动窗口打开， ctrl + /, ctrl + n，leader + tf 关闭
+leader + tv 右侧垂直打开， ctrl + h j k l 可以切换回缓冲区
+ 	
+===================== 其他
+ctrl + page up/dow ubuntu terminal窗口切换
+ctrl + shift + n 新建一个独立的terminal
+
+Leader + S l加载上一次的工作区
+ 
+====================== 非核心
+i 模式下，连续按两次 j 退出编辑模式
+（可以找一下astro vim默认自带的一些设置都在哪	）
+
+H 关闭文件目录树隐藏文件
+leader + ft 快速切换主题
+jk jjj
+大写都用Shift实现，而不是大写键，比如查找的N n切换
+大写锁定键切换为ESC
+切换按键映射 gsettings set org.gnome.desktop.input-sources xkb-options "['caps:escape']"
+还原 gsettings reset org.gnome.desktop.input-sources xkb-options
+
