@@ -6,29 +6,34 @@ leader + ff 快速打开文件
 leader + fw 全局搜索文件中的内容
 leader + b 会提示 缓冲区窗口相关
 
-在已打开的缓冲区中切换
-leader + fb 
-] + b
-
 Ctrl + o 上一个位置
 Ctrl + i 下一个位置
 
 wq/q + a 都是将命令作用与当前打开的所有窗口
+
+====================== 文字选中操作
 v模式 ---> h j k l ---> y 复制
+v模式 ---> x 剪贴
 v模式 ---> p 粘贴
 
-==================== 窗口操作
-Ctrl + w v 当前窗口查分到右侧
-leader + ff 搜到文件后 Ctrl + v 同样右侧分屏打开
-Ctrl + 方向键，调整当前焦点所在的窗口大小
- 
-终端
-leader + tf 浮动窗口打开， ctrl + /, ctrl + n，leader + tf 关闭
-leader + tv 右侧垂直打开， ctrl + h j k l 可以切换回缓冲区
- 	
-===================== 其他
-ctrl + page up/dow ubuntu terminal窗口切换
-ctrl + shift + n 新建一个独立的terminal
+====================== 窗口操作
+- Ctrl + w v 当前窗口查分到右侧
+  - leader + ff 搜到文件后 Ctrl + v 同样右侧分屏打开
+- Ctrl + 方向键，调整当前焦点所在的窗口大小
+
+在已打开的缓冲区中指定切换
+- leader + fb 加 Ctrl + j/k 
+
+在一打开的缓冲区中滚动切换
+- ] + b 
+====================== 终端
+- leader + tf 浮动窗口打开，退出编辑模式后重复按键退出；
+- leader + tv 右侧垂直打开， Ctrl + h j k l 可以切换回缓冲区；
+- Ctrl + / 加 Ctrl + n，终端退出编辑模式；
+
+====================== 其他
+Ctrl + page up/dow ubuntu terminal窗口切换
+Ctrl + shift + n 新建一个独立的terminal
 
 Leader + S l加载上一次的工作区
  
@@ -38,7 +43,8 @@ i 模式下，连续按两次 j 退出编辑模式
 
 H 关闭文件目录树隐藏文件
 leader + ft 快速切换主题
-jk jjj
+
+====================== 小操作
 大写都用Shift实现，而不是大写键，比如查找的N n切换
 大写锁定键切换为ESC
 切换按键映射 gsettings set org.gnome.desktop.input-sources xkb-options "['caps:escape']"
