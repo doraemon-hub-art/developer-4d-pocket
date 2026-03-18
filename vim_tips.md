@@ -11,6 +11,11 @@ Ctrl + i 下一个位置
 
 wq/q + a 都是将命令作用与当前打开的所有窗口
 
+====================== 代码相关
+
+- leader + / 注释当前行；
+	- 选中后同理；
+
 ====================== 文字选中操作
 v模式 ---> h j k l ---> y 复制
 v模式 ---> x 剪贴
@@ -29,7 +34,9 @@ v模式 ---> p 粘贴
 ====================== 终端
 - leader + tf 浮动窗口打开，退出编辑模式后重复按键退出；
 - leader + tv 右侧垂直打开， Ctrl + h j k l 可以切换回缓冲区；
-- Ctrl + / 加 Ctrl + n，终端退出编辑模式；
+	- Ctrl + / 加 Ctrl + n，终端退出编辑模式；
+- 使用 toggleterm.nvim 插件；
+	- F7 可以快速隐藏打开终端；
 
 ====================== 其他
 Ctrl + page up/dow ubuntu terminal窗口切换
@@ -50,3 +57,6 @@ leader + ft 快速切换主题
 切换按键映射 gsettings set org.gnome.desktop.input-sources xkb-options "['caps:escape']"
 还原 gsettings reset org.gnome.desktop.input-sources xkb-options
 
+
+====================== 辅助工具
+- 窗口项目多开 Tabby，用于开多个终端；
