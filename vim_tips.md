@@ -24,6 +24,12 @@ wq/q + a 都是将命令作用与当前打开的所有窗口
 	- leader d + g 函数注释说明;
 - leader l + a， 根据函数声明生成函数定义；
 
+- CMAKE 插件,正常模式下:
+	- CMakeGenerate 相当于cmake ..
+	- CMakeBuild 相当于 make -j14
+	- copen 编译信息；
+
+
 ====================== 文字选中操作
 v模式 ---> h j k l ---> y 复制
 v模式 ---> x 剪贴
@@ -51,6 +57,9 @@ Ctrl + page up/dow ubuntu terminal窗口切换
 Ctrl + shift + n 新建一个独立的terminal
 
 Leader + S l加载上一次的工作区
+
+- TODO
+	- leader + s T ，查看 TODO 和 NOTE 标记的内容；
  
 ====================== 非核心
 i 模式下，连续按两次 j 退出编辑模式
