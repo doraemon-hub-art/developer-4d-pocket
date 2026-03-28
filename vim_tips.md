@@ -28,6 +28,8 @@ wq/q + a 都是将命令作用与当前打开的所有窗口
 	- CMakeGenerate 相当于cmake ..
 	- CMakeBuild 相当于 make -j14
 	- copen 编译信息；
+- C++ LSP 依赖:
+	- cmake -DCMAKE_EXPORT_COMPILE_COMMANDS=ON ..
 
 
 ====================== 文字选中操作
@@ -67,6 +69,8 @@ i 模式下，连续按两次 j 退出编辑模式
 
 H 关闭文件目录树隐藏文件
 leader + ft 快速切换主题
+
+- :AstroReload 重新加载插件；
 
 ====================== 小操作
 大写都用Shift实现，而不是大写键，比如查找的N n切换
