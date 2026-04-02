@@ -37,7 +37,7 @@ wq/q + a 都是将命令作用与当前打开的所有窗口
 - doxygen插件；
 	- leader d + f 文件说明头;
 	- leader d + g 函数注释说明;
-- leader l + a， 根据函数声明生成函数定义；
+- leader l + a， 根据函数声明生成函数定义；	
 
 - CMAKE 插件,正常模式下:
 	- CMakeGenerate 相当于cmake ..
@@ -45,8 +45,12 @@ wq/q + a 都是将命令作用与当前打开的所有窗口
 	- copen 编译信息；
 - C++ LSP 依赖:
 	- cmake -DCMAKE_EXPORT_COMPILE_COMMANDS=ON ...
-	- 函数定义实现跳转，正常模式下；
-	- g d；
+	
+- 函数定义实现跳转，正常模式下 g d；
+
+- 文本替换，在变量/函数名上 leader l + r；
+	- 文本框中输入新名字 + 回车即可完成替换；
+
 - 显示 Outline / Symbols 面板:
 	- leader + l S;
 	- Ctrl + k 在面板上移动，对应的代码窗口可以直接调转到对应为止；
